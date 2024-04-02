@@ -1,7 +1,10 @@
 import React from 'react'
+import Home from './components/Home'
 
-export default function page() {
+export default function HomePage() {
   return (
-    <div>page</div>
+    <div className='bg-[#f4f1ea]'>
+      <Home />
+    </div>
   )
 }
