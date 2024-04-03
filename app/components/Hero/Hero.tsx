@@ -8,7 +8,9 @@ import burger2 from '@/public/images/b2.png';
 import Image from 'next/image';
 import { BiCycling } from 'react-icons/bi';
 
-
+// const imagefunc = (source: string): JSX.Element => {
+//     return <Image src={source} alt='Image' width={80} height={90} />
+// }
 
 const responsive = {
     desktop: {
@@ -27,6 +29,13 @@ const responsive = {
         slidesToSlide: 1 // optional, default to 1.
     }
 }
+
+// const getData = [
+//     {
+//         id: 1,
+//         image: imagefunc("/images/b1.png")
+//     },
+// ]
 
 export default function Hero() {
 
