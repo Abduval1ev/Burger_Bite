@@ -8,6 +8,8 @@ import burger2 from '@/public/images/b2.png';
 import Image from 'next/image';
 import { BiCycling } from 'react-icons/bi';
 
+
+
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -40,7 +42,7 @@ export default function Hero() {
             itemClass='item'
             showDots={true}
         >
-            <div className='w-[100%] h-[60vw] flex items-center justify-center flex-col bg-red-950 md:clip_path'>
+            <div className='w-[100%] h-[105vw] md:h-[70vw] lg:h-[50vw]  flex items-center justify-center flex-col bg-red-950 md:clip_path'>
                 <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
                     <Image src={burger1} alt="Image" className='hidden md:block' />
                     <div className="">
@@ -63,7 +65,7 @@ export default function Hero() {
                 </div>
             </div>
             {/* 1 */}
-            <div className='w-[100%] h-[60vw] flex items-center justify-center flex-col bg-blue-950 md:clip_path'>
+            <div className='w-[100%] h-[105vw] md:h-[70vw] lg:h-[50vw] flex items-center justify-center flex-col bg-blue-950 md:clip_path'>
                 <div className="w-[80%] grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-[2rem] mx-auto">
                     <Image src={burger2} alt="Image" className='hidden md:block' />
                     <div className="">
