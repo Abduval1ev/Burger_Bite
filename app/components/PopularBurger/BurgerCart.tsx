@@ -1,88 +1,51 @@
+'use client'
 
 import React from 'react'
 import Image from 'next/image';
+import { FaStar } from 'react-icons/fa6';
+import { BiShoppingBag } from 'react-icons/bi';
+
 
 interface Props {
+    id: number,
     title: string;
     image: string;
     price: string;
     reviews: string;
 }
 
-// const imageFunc = (source: string): JSX.Element => {
-//     return <Image src={source} alt='Image' />
-// }
-
-// const getImageData = [
-//     {
-//         id: 1,
-//         image: imageFunc('/images/b1.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 2,
-//         image: imageFunc('/images/b2.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 3,
-//         image: imageFunc('/images/b3.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 4,
-//         image: imageFunc('/images/b4.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 5,
-//         image: imageFunc('/images/b5.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 6,
-//         image: imageFunc('/images/b6.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 7,
-//         image: imageFunc('/images/b7.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 8,
-//         image: imageFunc('/images/b8.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-//     {
-//         id: 9,
-//         image: imageFunc('/images/b9.png'),
-//         text: "salom 1",
-//         price: "$12.00",
-//         reviews: "saas",
-//     },
-// ]
-
 export default function BurgerCart({ title, price, image, reviews }: Props) {
     return (
-        <>
-
-        </>
+        <div className='w-[300px] bg-white p-6 rounded-lg'>
+            <div className="w-[300px] h-[140px] mx-auto">
+                <Image
+                    src={image}
+                    alt={title}
+                    width={200}
+                    height={200}
+                    className='w-[200px] h-[200px] object-cover'
+                />
+            </div>
+            <h6 className='flex items-end mt-[1.3rem] text-[22px] text-black font-semibold'>
+                {title}
+            </h6>
+            <div className="flex items-center mt-[0.5rem] space-x-3">
+                <div className="flex items-center">
+                    <FaStar className='w-[1rem] h-[1rem] text-yellow-500' />
+                    <FaStar className='w-[1rem] h-[1rem] text-yellow-500' />
+                    <FaStar className='w-[1rem] h-[1rem] text-yellow-500' />
+                    <FaStar className='w-[1rem] h-[1rem] text-yellow-500' />
+                    <FaStar className='w-[1rem] h-[1rem] text-gray-400' />
+                </div>
+                <div className="text-black opacity-40 text-[18px] leading-none">({reviews})</div>
+            </div>
+            <p className='mt-[0.5rem] text-black text-opacity-70 text-[18px] leading-none'>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div className="flex mt-[1.4rem] items-center justify-between">
+                <div className="text-[25px] font-bold text-red-600">{price}</div>
+                <button className='px-4 py-2 hover:bg-green-600 transition-all duration-200 bg-red-600 flex items-center rounded-md text-white'>
+                    <BiShoppingBag className='w-[1.3rem] h-[1.3rem]' />
+                </button>
+            </div>
+        </div>
     )
 }
