@@ -14,19 +14,10 @@ interface Props {
     reviews: string;
 }
 
-export default function BurgerCart({ title, price, image, reviews }: Props, getImageData) {
+export default function BurgerCart({ title, price, image, reviews }: Props) {
     return (
         <div className='w-[300px] bg-white p-6 rounded-lg'>
-            {
-                getImageData.length ? (getImageData.map((item, i) => {
-                    console.log(getImageData);
-                    
-                    return (
-                        <div>{title}</div>
-                    )
-                })) : <>No Products!!!</>
-            }
-            {/* <div className="w-[300px] h-[140px] mx-auto">
+            <div className="w-[300px] h-[140px] mx-auto">
                 <Image
                     src={image}
                     alt={title}
@@ -54,7 +45,7 @@ export default function BurgerCart({ title, price, image, reviews }: Props, getI
                 <button className='px-4 py-2 hover:bg-green-600 transition-all duration-200 bg-red-600 flex items-center rounded-md text-white'>
                     <BiShoppingBag className='w-[1.3rem] h-[1.3rem]' />
                 </button>
-            </div> */}
+            </div>
         </div>
     )
 }
