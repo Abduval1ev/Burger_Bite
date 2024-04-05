@@ -6,6 +6,78 @@ import 'react-multi-carousel/lib/styles.css';
 import BurgerCart from './BurgerCart';
 
 
+const imageFunc = (source: string): JSX.Element => {
+    return <Image src={source} alt='Image' />
+}
+
+
+const getImageData = [
+    {
+        id: 1,
+        image: imageFunc('/images/b1.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 2,
+        image: imageFunc('/images/b2.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 3,
+        image: imageFunc('/images/b3.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 4,
+        image: imageFunc('/images/b4.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 5,
+        image: imageFunc('/images/b5.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 6,
+        image: imageFunc('/images/b6.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 7,
+        image: imageFunc('/images/b7.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 8,
+        image: imageFunc('/images/b8.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+    {
+        id: 9,
+        image: imageFunc('/images/b9.png'),
+        text: "salom 1",
+        price: "$12.00",
+        reviews: "saas",
+    },
+]
+
+
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1324 },
@@ -44,12 +116,7 @@ export default function PopularBurger() {
                         showDots={false}
                     >
                         <div>
-                            <BurgerCart
-                                title="Salom"
-                                image="/images/b1.png"
-                                price="10.88$"
-                                reviews="6"
-                            />
+                            <BurgerCart func={imageFunc} getImageData={getImageData} />
                         </div>
                     </Carousel>
                 </div>
