@@ -17,15 +17,13 @@ interface Props {
 export default function BurgerCart({ title, price, image, reviews }: Props) {
     return (
         <div className='w-[300px] bg-white p-6 rounded-lg'>
-            <div className="w-[300px] h-[140px] mx-auto">
-                <Image
-                    src={image}
-                    alt={title}
-                    width={200}
-                    height={200}
-                    className='w-[200px] h-[200px] object-cover'
-                />
-            </div>
+            <Image
+                src={image}
+                alt={title}
+                width={200}
+                height={200}
+                className='w-[220px] h-[200px] object-cover mx-[auto]'
+            />
             <h6 className='flex items-end mt-[1.3rem] text-[22px] text-black font-semibold'>
                 {title}
             </h6>
