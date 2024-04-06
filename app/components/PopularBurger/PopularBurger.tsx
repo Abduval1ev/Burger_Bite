@@ -114,9 +114,60 @@ export default function PopularBurger() {
                         itemClass='item'
                         showDots={false}
                     >
-                        <div>
-                            {/* <BurgerCart  /> */}
-                        </div>
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b1.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b2.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b3.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b4.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b5.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b6.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b7.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b8.png"
+                            reviews="6"
+                            price="10.99$" />
+                        <BurgerCart
+                            id={1}
+                            title="Burger"
+                            image="/images/b9.png"
+                            reviews="6"
+                            price="10.99$" />
                     </Carousel>
                 </div>
             </div>
