@@ -81,17 +81,22 @@ const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1324 },
         items: 4,
-        slidesToSlide: 1 // optional, default to 1.
+        slidesToSlide: 1
+    },
+    laptop: {
+        breakpoint: { max: 1324, min: 992 },
+        items: 3,
+        slidesToSlide: 1
     },
     tablet: {
-        breakpoint: { max: 1324, min: 768 },
+        breakpoint: { max: 992, min: 768 },
         items: 2,
-        slidesToSlide: 1 // optional, default to 1.
+        slidesToSlide: 1
     },
     mobile: {
         breakpoint: { max: 768, min: 0 },
         items: 1,
-        slidesToSlide: 1 // optional, default to 1.
+        slidesToSlide: 1
     }
 }
 
@@ -102,12 +107,12 @@ export default function PopularBurger() {
                 <h1>
                     Our Popular <span className='text-red-700'>Burgers</span>
                 </h1>
-                <div className="w-[80%] mt-[4rem] mx-a">
+                <div className="w-[90%] mt-[4rem] mx-auto">
                     <Carousel
                         additionalTransfrom={0}
                         arrows={true}
                         autoPlay={true}
-                        autoPlaySpeed={4000}
+                        autoPlaySpeed={10000}
                         centerMode={false}
                         infinite
                         responsive={responsive}
