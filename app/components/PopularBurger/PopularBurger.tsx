@@ -102,7 +102,7 @@ export default function PopularBurger() {
                 <h1>
                     Our Popular <span className='text-red-700'>Burgers</span>
                 </h1>
-                <div className="w-[80%] mt-[4rem] mx-auto">
+                <div className="w-[80%] mt-[4rem] mx-a">
                     <Carousel
                         additionalTransfrom={0}
                         arrows={true}
