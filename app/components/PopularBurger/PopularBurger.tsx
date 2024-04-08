@@ -107,12 +107,12 @@ export default function PopularBurger() {
                 <h1>
                     Our Popular <span className='text-red-700'>Burgers</span>
                 </h1>
-                <div className="w-[90%] mt-[4rem] mx-auto">
+                <div className="w-[80%] mt-[4rem] mx-auto">
                     <Carousel
                         additionalTransfrom={0}
                         arrows={true}
                         autoPlay={true}
-                        autoPlaySpeed={10000}
+                        autoPlaySpeed={3500}
                         centerMode={false}
                         infinite
                         responsive={responsive}
@@ -126,49 +126,49 @@ export default function PopularBurger() {
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={2}
                             title="Burger"
                             image="/images/b2.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={3}
                             title="Burger"
                             image="/images/b3.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={4}
                             title="Burger"
                             image="/images/b4.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={5}
                             title="Burger"
                             image="/images/b5.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={6}
                             title="Burger"
                             image="/images/b6.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={7}
                             title="Burger"
                             image="/images/b7.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={8}
                             title="Burger"
                             image="/images/b8.png"
                             reviews="6"
                             price="10.99$" />
                         <BurgerCart
-                            id={1}
+                            id={9}
                             title="Burger"
                             image="/images/b9.png"
                             reviews="6"
